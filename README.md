@@ -41,7 +41,9 @@ RBFE-amber-TI contains files for relative binding free energy simulations:
 5. Run 1-dooku.sh for the TI simulation extension.
 6. Run 3_analysis.sh to compute the relative binding free energy and plot convergence
 
-SILCS folder contains silcsmap for Piezo1 open state protein.
+SILCS folder contains silcsmap for Piezo1 open state protein:
+
+
 The protein file is yoda_open_ordered.pdb, and the view_maps.vmd is the script to visualize silcs fragmaps maps/.
 In linux, you can visualize as vmd -e view_maps.vmd, make sure all the related plugins/ folder is under the same folder in VMD. You can also use view_maps.pml to visualize in Pymol. Yoda1.FEP.pdb is the pose directly from previous ABFE simulation. We can take this as a reference of Yoda1 pose in Piezo1 open state pocket.
 The silcs-mc docked poses are saved in folder docked_poses/ 
