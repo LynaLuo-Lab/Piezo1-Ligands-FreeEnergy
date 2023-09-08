@@ -1,0 +1,17 @@
+ set boxtype  rect
+ set xtltype  tetragonal
+ set a        132.364 
+ set b        132.364
+ set c        147.528
+ set alpha    90.0
+ set beta     90.0
+ set gamma    90.0
+ set zcen     0.0
+ set nliptop  248
+ set nlipbot  231
+ set nwater   63104
+ set posid    pot
+ set negid    cla
+ set npos     193
+ set nneg     171
+

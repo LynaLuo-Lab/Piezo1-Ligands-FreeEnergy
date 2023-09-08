@@ -1,0 +1,14 @@
+slurmstepd: error: *** JOB 8195613 ON c455-074 CANCELLED AT 2021-07-28T18:06:25 ***
+------------- Processor 128 Exiting: Caught Signal ------------
+Reason: Terminated
+------------- Processor 129 Exiting: Caught Signal ------------
+Reason: Terminated
+------------- Processor 130 Exiting: Caught Signal ------------
+Reason: Terminated
+------------- Processor 131 Exiting: Caught Signal ------------
+Reason: Terminated
+application called MPI_Abort(comm=0x84000000, 1) - process 0
+[mpiexec@c455-074.stampede2.tacc.utexas.edu] HYDT_bscu_wait_for_completion (../../tools/bootstrap/utils/bscu_wait.c:151): one of the processes terminated badly; aborting
+[mpiexec@c455-074.stampede2.tacc.utexas.edu] HYDT_bsci_wait_for_completion (../../tools/bootstrap/src/bsci_wait.c:36): launcher returned error waiting for completion
+[mpiexec@c455-074.stampede2.tacc.utexas.edu] HYD_pmci_wait_for_completion (../../pm/pmiserv/pmiserv_pmci.c:493): launcher returned error waiting for completion
+[mpiexec@c455-074.stampede2.tacc.utexas.edu] main (../../ui/mpich/mpiexec.c:1149): process manager error waiting for completion

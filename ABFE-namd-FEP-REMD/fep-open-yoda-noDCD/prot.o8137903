@@ -1,0 +1,25 @@
+TACC:  Starting up job 8137903 
+TACC:  Starting parallel tasks... 
+Charm++> Running on MPI version: 3.1
+Charm++> level of thread support used: MPI_THREAD_FUNNELED (desired: MPI_THREAD_FUNNELED)
+Charm++> Running in SMP mode: 128 processes, 64 worker threads (PEs) + 1 comm threads per process, 8192 PEs total
+Charm++> The comm. thread both sends and receives messages
+Charm++> Using recursive bisection (scheme 3) for topology aware partitions
+Charm++> TORUS A SIZE 128 USING 0 1 2 3 4 5 6 7 8 9...
+Charm++> TORUS B SIZE 1 USING 0
+Charm++> TORUS C SIZE 1 USING 0
+Charm++> TORUS MINIMAL MESH SIZE IS 128 BY 1 BY 1
+Redirecting stdout to files output_site/0/job2.0.log through 127
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   PID 232645 RUNNING AT c407-004
+=   EXIT CODE: 7
+=   CLEANING UP REMAINING PROCESSES
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+   Intel(R) MPI Library troubleshooting guide:
+      https://software.intel.com/node/561764
+===================================================================================
+TACC:  MPI job exited with code: 7 
+TACC:  Shutdown complete. Exiting. 

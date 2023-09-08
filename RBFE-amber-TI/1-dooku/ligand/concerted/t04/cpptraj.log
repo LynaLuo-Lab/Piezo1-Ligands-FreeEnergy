@@ -1,0 +1,8 @@
+# 12/31/21 10:33:54
+# Args:  merged.parm7
+# Loaded topologies:
+#   merged.parm7
+trajin merged.rst7
+trajout check.pdb
+go
+quit

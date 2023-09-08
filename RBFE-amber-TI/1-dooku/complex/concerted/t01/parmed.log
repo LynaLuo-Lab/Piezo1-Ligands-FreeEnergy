@@ -1,0 +1,52 @@
+# Log started on 01/05/2022 [mm/dd/yyyy] at 08:52:20
+# Command line arguments: final-test.parm7
+# Loaded topologies: final-test.parm7
+HMassRepartition
+parmout pro_hmr.parm7
+go
+# Log started on 01/05/2022 [mm/dd/yyyy] at 11:09:10
+# Command line arguments: concerted.parm7
+# Loaded topologies: concerted.parm7
+printbonds :L0@C
+printbonds :L0@O
+printbonds :L0@OXT
+printbonds :L0@HA
+printbonds :L1@HA
+printbonds :L1@C
+printbonds :L1@CA
+printbonds :L1@CD
+printangles :L1@CD
+printdihedrals :L1@CD
+printdihedrals :L0@CD
+printdihedrals :353@NZ
+printangles :L0@OXT
+printangles :L0@O
+printangles :L0@HA
+printangles :L0@C
+printangles :L0@CA
+printdihedrals :L0@CA
+printdihedrals :L0@OXT
+printdihedrals :L0@CA
+printdihedrals :L0@HA
+printdihedrals :L0@O
+printdihedrals :L0@HA
+printdihedrals :L0@CA
+printdihedrals :L0@C
+printdihedrals :L0@CA
+printdihedrals :L0@O
+printdihedrals :L0@CA
+printdihedrals :L0@CA
+printdihedrals :L1@CA
+quit
+# Log started on 01/07/2022 [mm/dd/yyyy] at 09:04:53
+# Command line arguments: m2.parm7
+# Loaded topologies: m2.parm7
+HMassRepartition
+parmout hmr.parm7
+go
+# Log started on 01/07/2022 [mm/dd/yyyy] at 09:26:38
+# Command line arguments: m3.parm7
+# Loaded topologies: m3.parm7
+HMassRepartition
+parmout hmr-m3.parm7
+go

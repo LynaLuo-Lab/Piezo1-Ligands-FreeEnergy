@@ -1,0 +1,30 @@
+configuration {
+  step      1830000
+  dt 2.000000e+00
+  version 2020-07-07
+}
+
+colvar {
+  name lip_pock_DBC
+  x  1.34339037865451e+00
+}
+
+colvar {
+  name lip_dist
+  x  5.82424287665814e+00
+}
+
+restraint {
+  configuration {
+    step 1830000
+    name rmsd
+  }
+}
+
+restraint {
+  configuration {
+    step 1830000
+    name distance
+  }
+}
+

@@ -1,0 +1,78 @@
+
+#
+# distance and rmsd restraint between 3 lipids and protein residues
+#
+Colvarstrajfrequency    100 # 1 is for testing, change back to 100
+Colvarsrestartfrequency 100
+
+# This Colvars input defines a distance-to-bound-configuration (DBC) and a center-of-mass distance
+# coordinate, both with flat-well restraints (upperWall)
+
+# Selected protein atoms are defined via a PDB file of the whole system (rest_ref.pdb), with
+# occupancy values set to 1 for those atoms, and 0 everywhere else; this can be prepared in VMD
+# with the following two text commands:
+#
+# > [atomselect top all] set occupancy 0
+# > [atomselect top "alpha and within 15 of (resname CHL1 and resid 1)"] set occupancy 1
+
+# For analysis purposes, histograms can be collected with full time resolution
+# by adding "histogram" blocks to this input
+
+colvar {
+    name lip_pock_DBC
+
+    rmsd { 
+        refpositionsfile restraints/f1_rmsd.ref  
+        atoms { 
+             atomnumbers {11910 11911 11914 11915 11916 11917 11919 11921 11923 11924 11925 11926 11927 11928 11929 11930 11932 11934 11935 11936 11938}
+            #atomNameResidueRange  P  147 92 97
+            rotateReference
+            centerReference
+            fittingGroup {              # protein atoms
+              atomsFile          restraints/f1_rmsd.ref
+              atomsCol           O
+             # atomNumbers 6342 6344 6346 6350 6351 10209 10211 10213 10217 10218 10249 10251 10253 1025
+            } 
+            refPositionsFile      restraints/f1_rmsd.ref
+        } 
+    }
+} 
+
+harmonicWalls {
+    name rmsd
+    colvars lip_pock_DBC
+    lowerWalls  0
+    upperWalls  2.4
+    forceConstant 100
+}
+
+
+colvar {
+  name lip_dist
+
+  distance {
+    group1 {
+      atomnumbers {11910 11911 11914 11915 11916 11917 11919 11921 11923 11924 11925 11926 11927 11928 11929 11930 11932 11934 11935 11936 11938}
+      #atomNameResidueRange  P   147 92 97
+      rotateReference
+      centerReference
+      fittingGroup {                    # protein atoms
+              atomsFile          restraints/peak_dist.ref
+              atomsCol           O
+          #atomNumbers 6342 6344 6346 6350 6351 10209 10211 10213 10217 10218 10249 10251 10253 1025
+      } 
+      refPositionsFile restraints/peak_dist.ref     # ref protein coords for fitting
+    }
+    group2 {
+      dummyAtom (-21.69, -16.13, -7.82)  # center of POCKET PROTEIN  in reference coordinates
+    }
+  }
+}
+
+harmonicWalls {
+    name distance
+    colvars lip_dist
+    lowerWalls  3.9
+    upperWalls  9.9
+    forceConstant 100
+}

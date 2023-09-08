@@ -1,0 +1,9 @@
+# Ignore files above 50MB
+# find . -type f -size +50000k
+./RBFE-amber-TI/1-dooku/complex/concerted/t02/concerted.parm7
+./RBFE-amber-TI/1-dooku/complex/concerted/t01/concerted.parm7
+./RBFE-amber-TI/1-dooku/complex/concerted/t03/concerted.parm7
+./RBFE-amber-TI/1-dooku/complex/concerted/t04/concerted.parm7
+./ABFE-namd-FEP-REMD/fep-open-yoda-noDCD/inputfiles/step5_charmm2namd.psf
+./ABFE-namd-FEP-REMD/fep-open-yoda-noDCD/output_sort/0/fep.job4.0.sort.dcd
+./ABFE-namd-FEP-REMD/fep-open-yoda-noDCD/output_sort/127/fep.job4.127.sort.dcd

@@ -1,0 +1,32 @@
+MODEL       1
+REMARK  LGFE =   -9.911
+ATOM      2 C    yoda    1      47.716  48.985  69.227  1.00 -0.29      BENC C
+ATOM      3 C    yoda    1      48.143  48.291  67.968  1.00 -0.35      PRPC C
+ATOM      4 H    yoda    1      47.266  47.727  67.578  1.00  0.00      NCLA H
+ATOM      5 H    yoda    1      48.941  47.545  68.174  1.00  0.00      NCLA H
+ATOM      6 S    yoda    1      48.719  49.586  66.824  1.00 -0.51      PRPC S
+ATOM      7 C    yoda    1      46.391  49.449  69.367  1.00 -0.28      BENC C
+ATOM      8 Cl   yoda    1      45.209  49.194  68.111  1.00 -1.80      CLBXCl
+ATOM      9 C    yoda    1      46.010  50.146  70.516  1.00 -0.23      BENC C
+ATOM     10 H    yoda    1      44.990  50.491  70.607  1.00  0.00      NCLA H
+ATOM     11 C    yoda    1      46.944  50.420  71.521  1.00 -0.37      BENC C
+ATOM     12 H    yoda    1      46.649  50.972  72.403  1.00  0.00      NCLA H
+ATOM     13 C    yoda    1      48.262  49.968  71.382  1.00 -0.31      BENC C
+ATOM     14 H    yoda    1      48.991  50.157  72.156  1.00  0.00      NCLA H
+ATOM     15 C    yoda    1      48.645  49.239  70.253  1.00 -0.35      BENC C
+ATOM     16 Cl   yoda    1      50.264  48.603  70.178  1.00 -0.67      CLBXCl
+ATOM     17 N    yoda    1      49.076  46.668  64.476  1.00 -1.10      GENA N
+ATOM     18 N    yoda    1      48.501  47.514  65.311  1.00 -0.89      GENA N
+ATOM     19 C    yoda    1      49.298  48.546  65.560  1.00 -0.09      GEHC C
+ATOM     20 S    yoda    1      50.798  48.563  64.799  1.00 -0.41      PRPC S
+ATOM     21 C    yoda    1      50.301  47.079  64.124  1.00 -0.14      GEHC C
+ATOM     22 N    yoda    1      52.483  46.287  63.637  1.00 -0.71      GENA N
+ATOM     23 C    yoda    1      51.221  46.413  63.226  1.00 -0.23      BENC C
+ATOM     24 C    yoda    1      50.763  45.918  61.989  1.00 -0.18      BENC C
+ATOM     25 H    yoda    1      49.739  46.015  61.670  1.00  0.00      NCLA H
+ATOM     26 C    yoda    1      51.703  45.257  61.198  1.00 -0.16      BENC C
+ATOM     27 H    yoda    1      51.407  44.849  60.237  1.00  0.00      NCLA H
+ATOM     28 N    yoda    1      52.970  45.091  61.569  1.00 -0.64      GENA N
+ATOM     29 C    yoda    1      53.312  45.614  62.788  1.00 -0.20      GEHC C
+ATOM     30 H    yoda    1      54.349  45.492  63.109  1.00  0.00      NCLA H
+ENDMDL

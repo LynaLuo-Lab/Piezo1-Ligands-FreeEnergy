@@ -1,0 +1,37 @@
+slurmstepd: error: *** JOB 8195752 ON c455-014 CANCELLED AT 2021-07-28T18:37:32 ***
+------------- Processor 256 Exiting: Caught Signal ------------
+Reason: Terminated
+------------- Processor 260 Exiting: Caught Signal ------------
+Reason: Terminated
+------------- Processor 258 Exiting: Caught Signal ------------
+Reason: Terminated
+------------- Processor 266 Exiting: Caught Signal ------------
+Reason: Terminated
+------------- Processor 262 Exiting: Caught Signal ------------
+Reason: Terminated
+------------- Processor 257 Exiting: Caught Signal ------------
+Reason: Terminated
+------------- Processor 261 Exiting: Caught Signal ------------
+Reason: Terminated
+------------- Processor 268 Exiting: Caught Signal ------------
+Reason: Terminated
+------------- Processor 259 Exiting: Caught Signal ------------
+Reason: Terminated
+------------- Processor 264 Exiting: Caught Signal ------------
+Reason: Terminated
+------------- Processor 270 Exiting: Caught Signal ------------
+Reason: Terminated
+------------- Processor 267 Exiting: Caught Signal ------------
+Reason: Terminated
+------------- Processor 263 Exiting: Caught Signal ------------
+Reason: Terminated
+------------- Processor 269 Exiting: Caught Signal ------------
+Reason: Terminated
+------------- Processor 265 Exiting: Caught Signal ------------
+Reason: Terminated
+------------- Processor 271 Exiting: Caught Signal ------------
+Reason: Terminated
+[mpiexec@c455-014.stampede2.tacc.utexas.edu] HYDT_bscu_wait_for_completion (../../tools/bootstrap/utils/bscu_wait.c:151): one of the processes terminated badly; aborting
+[mpiexec@c455-014.stampede2.tacc.utexas.edu] HYDT_bsci_wait_for_completion (../../tools/bootstrap/src/bsci_wait.c:36): launcher returned error waiting for completion
+[mpiexec@c455-014.stampede2.tacc.utexas.edu] HYD_pmci_wait_for_completion (../../pm/pmiserv/pmiserv_pmci.c:493): launcher returned error waiting for completion
+[mpiexec@c455-014.stampede2.tacc.utexas.edu] main (../../ui/mpich/mpiexec.c:1149): process manager error waiting for completion

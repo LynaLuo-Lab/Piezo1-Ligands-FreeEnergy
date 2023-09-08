@@ -1,0 +1,3 @@
+in linux: vmd -e view_maps.vmd
+in Windows: ./vmd.exe -e view_maps.vmd, 
+            make sure to have all the VMD-related .dll, vmd.exe, vmd.rc files inside the visualized folder.

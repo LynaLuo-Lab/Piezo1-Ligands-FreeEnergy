@@ -1,0 +1,85 @@
+# 12/25/21 11:45:42
+# Args:  merged.parm7
+# Loaded topologies:
+#   merged.parm7
+parmbox x 120.1124230 y 120.1124230 z 108.0637010 alpha 90.0 beta 90.0 gamma 90.00
+parmwrite out box.parm7
+go
+quit
+# 12/25/21 11:45:54
+# Args:  merged.parm7
+# Loaded topologies:
+#   merged.parm7
+quit
+# 12/25/21 11:46:00
+# Args:  box.parm7
+# Loaded topologies:
+#   box.parm7
+trajin merged.rst7
+box x 120.1124230 y 120.1124230 z 108.0637010 alpha 90.0 beta 90.0 gamma 90.00
+trajout box.rst7
+go
+qquit
+quit
+# 12/31/21 10:42:45
+# Args:  concerted.parm7
+# Loaded topologies:
+#   concerted.parm7
+trajin concerted.rst7
+trajout check.pdb
+go
+quit
+# 01/05/22 08:54:29
+# Args:  pro_hmr.parm7
+# Loaded topologies:
+#   pro_hmr.parm7
+parmbox x 120.1124230 y 120.1124230 z 108.0637010 alpha 90.0 beta 90.0 gamma 90.00
+parmwrite out box.parm7
+go
+quit
+# 01/05/22 08:54:49
+# Args:  box.parm7
+# Loaded topologies:
+#   box.parm7
+trajin m2.rst
+trajin m2.rst7
+quit
+# 01/07/22 09:05:44
+# Args:  hmr.parm7
+# Loaded topologies:
+#   hmr.parm7
+parmbox x 132.364 y 132.364 z 147.528 alpha 90.0 beta 90.0 gamma 90.00
+parmwrite out box.parm7
+go
+quit
+# 01/07/22 09:06:56
+# Args:  box.parm7
+# Loaded topologies:
+#   box.parm7
+trajin m2.rst7
+box x 132.364 y 132.364 z 147.528 alpha 90.0 beta 90.0 gamma 90.00
+trajout box.rst7
+go
+quit
+# 01/07/22 09:25:35
+# Args:  m3.parm7
+# Loaded topologies:
+#   m3.parm7
+quit
+# 01/07/22 09:27:31
+# Args:  hmr-m3.parm7
+# Loaded topologies:
+#   hmr-m3.parm7
+parmbox x 132.364 y 132.364 z 147.528 alpha 90.0 beta 90.0 gamma 90.00
+parmwrite out box-m3.parm7
+go
+quit
+# 01/07/22 09:28:01
+# Args:  box-m3.parm7
+# Loaded topologies:
+#   box-m3.parm7
+trajin m3.rst7
+box x 132.364 y 132.364 z 147.528 alpha 90.0 beta 90.0 gamma 90.00
+trajout box-m3.rst7
+go
+quit

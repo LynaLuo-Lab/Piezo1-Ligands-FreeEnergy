@@ -1,0 +1,204 @@
+  
+ ==============================================================================
+                                SILCS-Pharm Program 
+            for generation of SILCS FragMap based pharmacophore models
+  
+                        Version A2.3 released on Oct/2015
+  
+          Copyright (C) 2013-2015 Wenbo Yu, Alexander D. MacKerell Jr.
+      and University of Maryland, School of Pharmacy. All Rights Reserved.
+  
+      When use, please cite: J. Comput. Aided Mol. Des. 2014, 28, 491-507.
+                        and  J. Chem. Inf. Model. 2015, 55, 407–420.
+            For any questions, email: alex@outerbanks.umaryland.edu
+ ==============================================================================
+  
+ 
+ 1. Reading input parameters ... 
+ 
+ Enter FragMap files prefix:
+ Please note: you should have FragMap files with standard names in "maps/" directory! 
+ Enter hydrophobic map GFE cutoff:
+ (Suggested GFE cutoff: -1.2 kcal/mol)
+ Enter H-bond donor map GFE cutoff:
+ (Suggested GFE cutoff: -1.0 kcal/mol)
+ Enter H-bond acceptor map GFE cutoff:
+ (Suggested GFE cutoff: -1.0 kcal/mol)
+ Enter negative acceptor map GFE cutoff:
+ (Suggested GFE cutoff: -1.8 kcal/mol)
+ Enter positive donor GFE map GFE cutoff:
+ (Suggested GFE cutoff: -1.8 kcal/mol)
+ Do you want to use sphere set (detailed) or one sphere (rough) to define the binding pocket shape?
+ Option 1: Sphere set 
+ Option 2: One sphere 
+ Choose 1 or 2:
+ One sphere will be used to define the binding pocket!
+ Enter sphere center coordinates x,y,z:
+ Enter sphere radius:
+ Enter output filename prefix:
+ 
+ 2. Voxel clustering and FragMap feature generation ...
+ 
+ **********************   2.1 Aromatic Map  ******************************
+ Reading GFE map file: maps/yoda_open_ordered.benc.gfe.map                                                                 
+ Total number of bins (Nx*Ny*Nz):  103 *  111 *  113
+ Bin size (Ax*Ay*Az)Angstroms**3 : 1.00 * 1.00 * 1.00
+ Center of the grid: ( 52.79, 44.10, 75.32)
+ Minimum value of the grid: (  1.29,-11.40, 18.82)
+ Number of voxels that satisfy the GFE cutoff:   1001
+ Reading sphere file: bindingsite.sph                                                                                     
+ Pick up    1 non-zero radius spheres out of    1 spheres
+ There are total of           75  voxels within all spheres
+ There are            1  clusters for arom                                                                                                
+ **********************   2.2 Aliphatic Map  ******************************
+ Reading GFE map file: maps/yoda_open_ordered.prpc.gfe.map                                                                 
+ Total number of bins (Nx*Ny*Nz):  103 *  111 *  113
+ Bin size (Ax*Ay*Az)Angstroms**3 : 1.00 * 1.00 * 1.00
+ Center of the grid: ( 52.79, 44.10, 75.32)
+ Minimum value of the grid: (  1.29,-11.40, 18.82)
+ Number of voxels that satisfy the GFE cutoff:   1822
+ Reading sphere file: bindingsite.sph                                                                                     
+ Pick up    1 non-zero radius spheres out of    1 spheres
+ There are total of           76  voxels within all spheres
+ There are            4  clusters for alip                                                                                                
+ ********************  2.3 Generic Hydrophobic Map  ************************
+ Reading GFE map file: maps/yoda_open_ordered.apolar.gfe.map                                                               
+ Total number of bins (Nx*Ny*Nz):  103 *  111 *  113
+ Bin size (Ax*Ay*Az)Angstroms**3 : 1.00 * 1.00 * 1.00
+ Center of the grid: ( 52.79, 44.10, 75.32)
+ Minimum value of the grid: (  1.29,-11.40, 18.82)
+ Number of voxels that satisfy the GFE cutoff:   1156
+ Reading sphere file: bindingsite.sph                                                                                     
+ Pick up    1 non-zero radius spheres out of    1 spheres
+ There are total of           76  voxels within all spheres
+ There are            2  clusters for genn                                                                                                
+ ********************* 2.4 MEOH H-bond donor Map ***************************
+ Reading GFE map file: maps/yoda_open_ordered.meoo.gfe.map                                                                 
+ Total number of bins (Nx*Ny*Nz):  103 *  111 *  113
+ Bin size (Ax*Ay*Az)Angstroms**3 : 1.00 * 1.00 * 1.00
+ Center of the grid: ( 52.79, 44.10, 75.32)
+ Minimum value of the grid: (  1.29,-11.40, 18.82)
+ Number of voxels that satisfy the GFE cutoff:   1821
+ Reading sphere file: bindingsite.sph                                                                                     
+ Pick up    1 non-zero radius spheres out of    1 spheres
+ There are total of           47  voxels within all spheres
+ There are            5  clusters for meoh                                                                                                
+ ****************** 2.5 MEOO H-bond acceptor Map ***************************
+ Reading GFE map file: maps/yoda_open_ordered.meoo.gfe.map                                                                 
+ Total number of bins (Nx*Ny*Nz):  103 *  111 *  113
+ Bin size (Ax*Ay*Az)Angstroms**3 : 1.00 * 1.00 * 1.00
+ Center of the grid: ( 52.79, 44.10, 75.32)
+ Minimum value of the grid: (  1.29,-11.40, 18.82)
+ Number of voxels that satisfy the GFE cutoff:   1821
+ Reading sphere file: bindingsite.sph                                                                                     
+ Pick up    1 non-zero radius spheres out of    1 spheres
+ There are total of           47  voxels within all spheres
+ There are            5  clusters for meoo                                                                                                
+ *******************  2.6 IMIN+FORN H-bond donor Map ***********************
+ Reading GFE map file: maps/yoda_open_ordered.hbdon.gfe.map                                                                
+ Total number of bins (Nx*Ny*Nz):  103 *  111 *  113
+ Bin size (Ax*Ay*Az)Angstroms**3 : 1.00 * 1.00 * 1.00
+ Center of the grid: ( 52.79, 44.10, 75.32)
+ Minimum value of the grid: (  1.29,-11.40, 18.82)
+ Number of voxels that satisfy the GFE cutoff:    124
+ Reading sphere file: bindingsite.sph                                                                                     
+ Pick up    1 non-zero radius spheres out of    1 spheres
+ There are total of            3  voxels within all spheres
+ There are            2  clusters for forn                                                                                                
+ ***************  2.7 Generic H-bond donor (hydrogen) Map ******************
+ Reading GFE map file: maps/yoda_open_ordered.hbdon.gfe.map                                                                
+ Total number of bins (Nx*Ny*Nz):  103 *  111 *  113
+ Bin size (Ax*Ay*Az)Angstroms**3 : 1.00 * 1.00 * 1.00
+ Center of the grid: ( 52.79, 44.10, 75.32)
+ Minimum value of the grid: (  1.29,-11.40, 18.82)
+ Number of voxels that satisfy the GFE cutoff:    124
+ Reading sphere file: bindingsite.sph                                                                                     
+ Pick up    1 non-zero radius spheres out of    1 spheres
+ There are total of            3  voxels within all spheres
+ There are            2  clusters for hdon                                                                                                
+ **************  2.8 Generic H-bond donor (heavy atom) Map ******************
+ Reading GFE map file: maps/yoda_open_ordered.hbdon.gfe.map                                                                
+ Total number of bins (Nx*Ny*Nz):  103 *  111 *  113
+ Bin size (Ax*Ay*Az)Angstroms**3 : 1.00 * 1.00 * 1.00
+ Center of the grid: ( 52.79, 44.10, 75.32)
+ Minimum value of the grid: (  1.29,-11.40, 18.82)
+ Number of voxels that satisfy the GFE cutoff:    124
+ Reading sphere file: bindingsite.sph                                                                                     
+ Pick up    1 non-zero radius spheres out of    1 spheres
+ There are total of            3  voxels within all spheres
+ There are            2  clusters for hdoh                                                                                                
+ There are            2 heavy features
+ *******************  2.9 Generic H-bond acceptor Map ***********************
+ Reading GFE map file: maps/yoda_open_ordered.hbacc.gfe.map                                                                
+ Total number of bins (Nx*Ny*Nz):  103 *  111 *  113
+ Bin size (Ax*Ay*Az)Angstroms**3 : 1.00 * 1.00 * 1.00
+ Center of the grid: ( 52.79, 44.10, 75.32)
+ Minimum value of the grid: (  1.29,-11.40, 18.82)
+ Number of voxels that satisfy the GFE cutoff:    351
+ Reading sphere file: bindingsite.sph                                                                                     
+ Pick up    1 non-zero radius spheres out of    1 spheres
+ There are total of            6  voxels within all spheres
+ There are            2  clusters for hacc                                                                                                
+ **********************  2.10 ACEO anion Map  ******************************
+ Reading GFE map file: maps/yoda_open_ordered.aceo.gfe.map                                                                 
+ Total number of bins (Nx*Ny*Nz):  103 *  111 *  113
+ Bin size (Ax*Ay*Az)Angstroms**3 : 1.00 * 1.00 * 1.00
+ Center of the grid: ( 52.79, 44.10, 75.32)
+ Minimum value of the grid: (  1.29,-11.40, 18.82)
+ Number of voxels that satisfy the GFE cutoff:    472
+ Reading sphere file: bindingsite.sph                                                                                     
+ Pick up    1 non-zero radius spheres out of    1 spheres
+ There are total of            0  voxels within all spheres
+  
+ %%%%% WARNING: No voxel is found for map type of aceo, under current GFE cutoff!
+  
+ **********************  2.11 MAMN cation Map  ******************************
+ Reading GFE map file: maps/yoda_open_ordered.mamn.gfe.map                                                                 
+ Total number of bins (Nx*Ny*Nz):  103 *  111 *  113
+ Bin size (Ax*Ay*Az)Angstroms**3 : 1.00 * 1.00 * 1.00
+ Center of the grid: ( 52.79, 44.10, 75.32)
+ Minimum value of the grid: (  1.29,-11.40, 18.82)
+ Number of voxels that satisfy the GFE cutoff:    320
+ Reading sphere file: bindingsite.sph                                                                                     
+ Pick up    1 non-zero radius spheres out of    1 spheres
+ There are total of            0  voxels within all spheres
+  
+ %%%%% WARNING: No voxel is found for map type of mamn, under current GFE cutoff!
+  
+  
+ 3. FragMap feature to pharmacophore feature conversion ...
+  
+ 3.1 Determine Aro,Hyd,Aro|Hyd features ...
+ The            1 (st/nd/rd/th) AROM|ALIP feature is found.
+ The            1 (st/nd/rd/th) ALIP feature is found.
+ 3.2 Determine neutral Don, Acc features ...
+ There are            2  out of            2  HDON spheres that have overlaps with HDON hydrogen spheres.
+ There are            0  MEOO spheres that have no overlap with MEOH spheres.
+ 3.3 Determine Ani,Cat,Don,Acc joint features ...
+ There are            0  ACEO spheres that are merged into HACC features.
+ There are            2  HACC spheres left after merging ACEO with HACC.
+ There are            0  ACEO spheres left after merging ACEO with HACC.
+ There are            0  MAMN spheres that are merged into HDON features.
+ There are            2  HDON spheres left after merging MAMN with HDON.
+ There are            0  MAMN spheres left after merging MAMN with HDON.
+  
+ 4. Generating Pharm models for VS in MOE/Pharmer format ...
+  
+ Reading exclusion map file to determine excluded volume constrains: maps/yoda_open_ordered.excl.map                                                                     
+ Number of voxels that are non-accessible for fragments:       189102
+ There are         7015  exclusion voxels at the binding pocket + 5 Angstrom that will be used in pharmacophore models.
+  
+ Writing Pharm models ... 
+ Please note: only FGFE recommonded hypotheses in partial matching mode will be written.
+ Statistics for hypothesis in full matching mode:
+ There are           20  hypotheses (full matching mode) if considering            3  SILCS features at once.
+ There are           15  hypotheses (full matching mode) if considering            4  SILCS features at once.
+ There are            6  hypotheses (full matching mode) if considering            5  SILCS features at once.
+ There are            1  hypotheses (full matching mode) if considering            6  SILCS features at once.
+ If you want to use hypothesis in full matching mode, please modify the ph4 files in MOE or with a text editor.
+  
+ The number of key features varies from 3 to    6.
+ Please look at: silcs_pharm/yoda_open_ordered.features.dat file for all features in the increasing order of FGFE score.
+ You can select features on your own to build a specific hyphothesis other than the suggested one.
+  
+ SILCS-Pharm program run successfully.

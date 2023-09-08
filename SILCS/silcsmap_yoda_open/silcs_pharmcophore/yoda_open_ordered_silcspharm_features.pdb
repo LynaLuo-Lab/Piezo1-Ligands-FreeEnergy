@@ -1,0 +1,7 @@
+REMARK   Created by ph4_to_pdb
+ATOM      1 C    PHA A   1      48.835  48.467  68.580  1.00  2.50           Aro|Hyd
+ATOM      2 C    PHA A   1      39.794  49.764  68.320  1.00  1.96           Hyd
+ATOM      3 O    PHA A   1      49.127  47.097  64.320  1.00  1.50           Acc&!Ani
+ATOM      4 O    PHA A   1      46.794  49.597  58.320  1.00  1.22           Acc&!Ani
+ATOM      5 N    PHA A   1      51.294  45.097  63.820  1.00  1.50           Don&!Cat
+ATOM      6 N    PHA A   1      47.794  48.097  58.320  1.00  0.87           Don&!Cat

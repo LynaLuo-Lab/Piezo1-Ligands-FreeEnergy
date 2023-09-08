@@ -1,0 +1,101 @@
+
+\makeatletter
+\newcommand{\dontusepackage}[2][]{%
+  \@namedef{ver@#2.sty}{9999/12/31}%
+  \@namedef{opt@#2.sty}{#1}}
+\makeatother
+
+\dontusepackage{mciteplus}
+
+
+% achemso loads mathptmx, but mathptmx messes \jmath, so save it here
+\let\stdcoprod=\coprod
+\let\stdamalg=\amalg
+\let\stdjmath=\jmath
+
+% \documentclass[journal=jctcce,manuscript=article,layout=twocolumn]{achemso}
+\documentclass[journal=jctcce,manuscript=article,hyperref=false]{achemso}
+
+% reset \jmath
+\let\coprod=\stdcoprod
+\let\amalg=\stdamalg
+\let\jmath=\stdjmath
+
+
+
+% Show all authors (don\'t use et al)
+\makeatletter
+\renewcommand*\acs@etal@firstonly{\acs@etal@truncatetrue}
+\renewcommand*\acs@maxauthors{0}
+\makeatother
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{bm}
+\usepackage{rotating}
+
+% but we need to include txfonts to use \jmath now
+\usepackage[T1]{fontenc}
+\usepackage{txfonts}
+
+\title{}
+\begin{document}
+\listoffigures
+\listoftables
+
+
+
+
+\clearpage
+\pagebreak
+
+\begin{table*}
+\caption{Summary, excluding the first 0/12 of the simulations}
+{\small
+\begin{tabular}{l r r r r r}
+\hline
+                             Calculation &                 TI &                TI3 &                BAR &               MBAR & max $\tau$\\
+\hline
+\hline
+\end{tabular}
+}
+\end{table*}
+
+\begin{table*}
+\caption{Summary, excluding the first 3/12 of the simulations}
+{\small
+\begin{tabular}{l r r r r r}
+\hline
+                             Calculation &                 TI &                TI3 &                BAR &               MBAR & max $\tau$\\
+\hline
+\hline
+\end{tabular}
+}
+\end{table*}
+
+\begin{table*}
+\caption{Summary, excluding the first 4/12 of the simulations}
+{\small
+\begin{tabular}{l r r r r r}
+\hline
+                             Calculation &                 TI &                TI3 &                BAR &               MBAR & max $\tau$\\
+\hline
+\hline
+\end{tabular}
+}
+\end{table*}
+
+\begin{table*}
+\caption{Summary, excluding the first 6/12 of the simulations}
+{\small
+\begin{tabular}{l r r r r r}
+\hline
+                             Calculation &                 TI &                TI3 &                BAR &               MBAR & max $\tau$\\
+\hline
+\hline
+\end{tabular}
+}
+\end{table*}
+\end{document}
+

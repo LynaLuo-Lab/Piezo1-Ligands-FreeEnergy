@@ -1,0 +1,32 @@
+MODEL       1
+REMARK  LGFE =  -10.066
+ATOM      2 C    dook    1      47.744  49.094  69.883  1.00 -0.34      BENC C
+ATOM      3 C    dook    1      48.414  48.280  68.800  1.00 -0.51      PRPC C
+ATOM      4 H    dook    1      47.669  47.522  68.468  1.00  0.00      NCLA H
+ATOM      5 H    dook    1      49.280  47.721  69.215  1.00  0.00      NCLA H
+ATOM      6 S    dook    1      48.943  49.374  67.410  1.00 -0.51      PRPC S
+ATOM      7 C    dook    1      48.533  49.690  70.890  1.00 -0.33      BENC C
+ATOM      8 Cl   dook    1      50.272  49.626  70.825  1.00 -0.88      CLBXCl
+ATOM      9 C    dook    1      47.932  50.343  71.969  1.00 -0.33      BENC C
+ATOM     10 H    dook    1      48.557  50.773  72.737  1.00  0.00      NCLA H
+ATOM     11 C    dook    1      46.539  50.433  72.055  1.00 -0.29      BENC C
+ATOM     12 H    dook    1      46.076  50.933  72.895  1.00  0.00      NCLA H
+ATOM     13 C    dook    1      45.750  49.897  71.032  1.00 -0.25      BENC C
+ATOM     14 H    dook    1      44.674  49.987  71.067  1.00  0.00      NCLA H
+ATOM     15 C    dook    1      46.341  49.249  69.943  1.00 -0.34      BENC C
+ATOM     16 Cl   dook    1      45.294  48.687  68.670  1.00 -1.80      CLBXCl
+ATOM     17 N    dook    1      50.154  46.195  65.819  1.00 -0.76      GENA N
+ATOM     18 N    dook    1      49.432  46.877  66.658  1.00 -0.85      GENA N
+ATOM     19 C    dook    1      49.651  48.130  66.358  1.00  0.03      GEHC C
+ATOM     20 O    dook    1      50.512  48.371  65.332  1.00 -0.66      GENA O
+ATOM     21 C    dook    1      50.807  47.057  65.029  1.00 -0.16      GEHC C
+ATOM     22 N    dook    1      51.935  47.339  62.891  1.00 -0.64      GENA N
+ATOM     23 C    dook    1      51.686  46.551  63.952  1.00 -0.20      BENC C
+ATOM     24 C    dook    1      52.286  45.284  64.081  1.00 -0.12      BENC C
+ATOM     25 H    dook    1      52.103  44.652  64.933  1.00  0.00      NCLA H
+ATOM     26 C    dook    1      53.156  44.883  63.058  1.00 -0.08      BENC C
+ATOM     27 H    dook    1      53.645  43.916  63.119  1.00  0.00      NCLA H
+ATOM     28 N    dook    1      53.417  45.630  61.988  1.00 -0.94      GENA N
+ATOM     29 C    dook    1      52.789  46.844  61.946  1.00 -0.09      GEHC C
+ATOM     30 H    dook    1      52.990  47.478  61.079  1.00  0.00      NCLA H
+ENDMDL
