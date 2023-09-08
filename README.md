@@ -1,4 +1,6 @@
 # Piezo1-Ligands-FreeEnergy
+[![DOI](https://zenodo.org/badge/688722719.svg)](https://zenodo.org/badge/latestdoi/688722719)
+
 This repository contains three computational methods to compute or rank ligand binding affinities at the transmembrane region of the mechanosensitive Piezo1 channel.
 
 ![Summary of three computational methods](https://github.com/LynaLuo-Lab/Piezo1-Ligands-FreeEnergy/blob/7dd4b940527c3f0b043fcd25cdeaede85ddbdb3d/SummaryTable.png)
