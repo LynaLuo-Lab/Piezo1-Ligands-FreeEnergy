@@ -1,11 +1,16 @@
 # Piezo1-Ligands-FreeEnergy
 This repository contains three computational methods (ABFE, RBFE, SILCS) to compute or rank ligand binding affinities at the transmembrane region of the mechanosensitive Piezo1 channel.
 
-ABFE-namd-FEP-REMD and SILCS folders were prepared by Wenjuan Jiang <sibylaries@gmail.com> (09/06/2023)
 
-RBFE-amber-TI folder was prepared by Han Zhang <haz519@lehigh.edu> (09/03/2023)
 
-ABFE-namd-FEP-REMD contains files for absolute binding free energy simulation:
+
+**ABFE-namd-FEP-REMD** and **SILCS** folders were prepared by Wenjuan Jiang <sibylaries@gmail.com> 
+
+**RBFE-amber-TI** folder was prepared by Han Zhang <haz519@lehigh.edu> 
+
+
+
+**ABFE-namd-FEP-REMD contains files for absolute binding free energy simulation:**
 
 For input files, there are general NAMD input files in inputfiles/, ligand parameter files lig-forcefield/, simulation configuration file configure/,  protein-ligand distance restraint files in restraints/, analysis and related run scripts in folder scripts/, CHARMM force field files in toppar/. 
 
@@ -32,7 +37,7 @@ set rehistory_file [open [format "$job_output_root.$replica_id.rehistory" $repli
 9.	run sortreplica-stampede2.sh to unscramble trajectories so each trajectory represents one lambda value. The 0 is fully decoupled and 127 is fully coupled. When the job is finished, we can use scripts/copy_name.sh to move rehistory file to output_sort/ folder for each replica. When .rehistory files are in output_sort file, we are safe to run scripts/sortreplica-stampede2.sh to sort trajectories for each replica.
 
 
-RBFE-amber-TI contains files for relative binding free energy simulations:
+**RBFE-amber-TI contains files for relative binding free energy simulations:**
 
 1. According to the difference between ligands (L0 and L1), change the scmask1 and scmask2 (in the .tmpl files) to be consistent with the system.
 2. Run 1_setup.sh to generate 12 lambda windows.
@@ -41,7 +46,7 @@ RBFE-amber-TI contains files for relative binding free energy simulations:
 5. Run 1-dooku.sh for the TI simulation extension.
 6. Run 3_analysis.sh to compute the relative binding free energy and plot convergence
 
-SILCS folder contains silcsmap for Piezo1 open state protein:
+**SILCS folder contains silcsmap for Piezo1 open state protein:**
 
 1. The protein file is yoda_open_ordered.pdb, and the view_maps.vmd is the script to visualize silcs fragmaps maps/.
 In linux, you can visualize as "vmd -e view_maps.vmd", make sure all the related plugins/ folder is under the same folder. You can also use view_maps.pml to visualize in Pymol. Yoda1.FEP.pdb is the pose directly from previous ABFE simulation. We can take this as a reference of Yoda1 pose in Piezo1 open state pocket.
