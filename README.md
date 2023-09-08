@@ -1,14 +1,14 @@
 # Piezo1-Ligands-FreeEnergy
-This repository contains three computational methods (ABFE, RBFE, SILCS) to compute or rank ligand binding affinities at the transmembrane region of the mechanosensitive Piezo1 channel.
+This repository contains three computational methods to compute or rank ligand binding affinities at the transmembrane region of the mechanosensitive Piezo1 channel.
 
-
+![Summary of three computational methods](https://github.com/LynaLuo-Lab/Piezo1-Ligands-FreeEnergy/blob/7dd4b940527c3f0b043fcd25cdeaede85ddbdb3d/SummaryTable.png)
 
 
 **ABFE-namd-FEP-REMD** and **SILCS** folders were prepared by Wenjuan Jiang <sibylaries@gmail.com> 
 
 **RBFE-amber-TI** folder was prepared by Han Zhang <haz519@lehigh.edu> 
 
-
+<br>
 
 **ABFE-namd-FEP-REMD contains files for absolute binding free energy simulation:**
 
@@ -36,6 +36,7 @@ set rehistory_file [open [format "$job_output_root.$replica_id.rehistory" $repli
 8.	run scripts/5_fe.pl to compute free energy for each job
 9.	run sortreplica-stampede2.sh to unscramble trajectories so each trajectory represents one lambda value. The 0 is fully decoupled and 127 is fully coupled. When the job is finished, we can use scripts/copy_name.sh to move rehistory file to output_sort/ folder for each replica. When .rehistory files are in output_sort file, we are safe to run scripts/sortreplica-stampede2.sh to sort trajectories for each replica.
 
+<br>
 
 **RBFE-amber-TI contains files for relative binding free energy simulations:**
 
@@ -45,6 +46,8 @@ set rehistory_file [open [format "$job_output_root.$replica_id.rehistory" $repli
 4. To extend the simulations, change the jidx to a different number in the submit.sh file. The number of MD steps (nstlim in ti.in.tmpl file) might also need to be adjusted to reach the desired simulation length.
 5. Run 1-dooku.sh for the TI simulation extension.
 6. Run 3_analysis.sh to compute the relative binding free energy and plot convergence
+
+<br>
 
 **SILCS folder contains silcsmap for Piezo1 open state protein:**
 
